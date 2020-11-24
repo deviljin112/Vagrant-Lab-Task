@@ -62,3 +62,7 @@ Now that our tests have been ran. We can initialise our machine. Return back to 
 ### SSH
 
 If we return once again to our root folder, we can now safely use `vagrant ssh` to connect to our machine. Once connected we can use it ready with `nginx` as we have predefined it to be automatically installed when we initalise our machine.
+
+## App.js
+
+To run the app we need to install `npm`. To do that connect to the machine with `vagrant ssh` and run `sudo apt-get install npm`. Then we navigate to the app folder with `cd /app` and in this folder we run `npm start` which will run our app and we can return to our computer, and navigate to `http://development.local:3000/` which will open up our app.
